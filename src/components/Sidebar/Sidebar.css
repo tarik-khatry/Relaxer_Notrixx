@@ -1,0 +1,50 @@
+/* --------------------------Side - Bar-------------- */
+.sidebar__main {
+  transition: 1s ease;
+}
+
+.sidebar__main .sidebar__mainWrapper {
+  height: 100%;
+  width: 100%;
+  background: #1e082a;
+  font-family: "Rubik", sans-serif;
+  color: var(--title-color);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar__main .sidebar__mainWrapper .sidebar__head {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.sidebar__main .sidebar__mainWrapper .sidebar__head p {
+  text-align: start;
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
+}
+
+.sidebar__main .sidebar__mainWrapper .sidebar__option {
+  display: flex;
+  width: 80%;
+  padding: 15px 0px;
+  align-items: center;
+}
+.sidebar__main .sidebar__mainWrapper .sidebar__option > div {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+.sidebar__main .sidebar__mainWrapper .sidebar__option > h4 {
+  margin-left: 15px;
+
+  color: var(--text-color);
+  font-family: "Rubik", sans-serif;
+}

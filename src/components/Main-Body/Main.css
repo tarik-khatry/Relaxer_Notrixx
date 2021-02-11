@@ -1,0 +1,121 @@
+.player-list {
+  overflow-y: scroll;
+  background: rgb(19 5 35);
+  /* z-index:2; */
+  transition: all 0.5s ease;
+}
+.player-list .toggle-list {
+  position: sticky;
+  top: 0px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  background: rgb(49, 49, 49);
+}
+.player-list .toggle-list i.fa {
+  color: #ccc;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.list {
+  padding: 10px;
+}
+
+.list .item:hover {
+  background: rgba(var(--light-color), 0.5);
+}
+.list .item {
+  display: flex;
+  padding: 5px 5px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+.list .song-number {
+  height: 5vh;
+  margin: auto 0px;
+  position: relative;
+  width: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list .song-number span {
+  color: var(--title-color);
+  position: absolute;
+  font-size: 1.5vh;
+  font-weight: 500;
+  font-family: "poppins";
+}
+.list .amplitude-active-song-container .song-number span {
+  visibility: hidden;
+}
+.list .amplitude-paused .song-number span {
+  visibility: visible;
+}
+
+.list .amplitude-active-song-container .song-number img.gif {
+  /* visibility: visible; */
+  display: block;
+  opacity: 0.5;
+}
+.list .amplitude-paused .song-number img.gif {
+  /* visibility: hidden; */
+  display: none;
+}
+.list .song-number img.gif {
+  display: none;
+  /* visibility: hidden; */
+  position: absolute;
+  height: 2.5vh;
+  width: 2.5vh;
+}
+.list .item .thumbnail {
+  position: relative;
+  max-width: 7.5vh;
+  height: 7.5vh;
+  overflow: hidden;
+}
+.list .thumbnail img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.list .thumbnail img.gif {
+  position: absolute;
+}
+
+.list .item .details {
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.list .item .details h2 {
+  color: var(--title-color);
+  font-size: 13px;
+}
+.list .item .details p {
+  color: var(--text-color);
+  font-size: 13px;
+}
+.player-list::-webkit-scrollbar {
+  max-width: 5px;
+  border-radius: 200px;
+  background: rgba(34, 34, 34, 0.172);
+}
+.player-list::-webkit-scrollbar-thumb {
+  border-radius: 200px;
+  background: var(--border-active-color);
+}
+
+.main-card .player-card_body {
+  transition: all 0.5s ease;
+}
+
+a {
+  text-decoration: none;
+}
